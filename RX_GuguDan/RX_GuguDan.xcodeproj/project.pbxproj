@@ -13,6 +13,8 @@
 		873BC19A222C48B7008E0FF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 873BC199222C48B7008E0FF6 /* Assets.xcassets */; };
 		873BC19D222C48B7008E0FF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873BC19B222C48B7008E0FF6 /* LaunchScreen.storyboard */; };
 		873BC1A8222C48B7008E0FF6 /* RX_GuguDanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873BC1A7222C48B7008E0FF6 /* RX_GuguDanTests.swift */; };
+		C93FA4D26F05982F63AB7FD1 /* Pods_RX_GuguDan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54F9A05701F7357DEA181C9 /* Pods_RX_GuguDan.framework */; };
+		D35B8D89C7EC97C89A6533B5 /* Pods_RX_GuguDanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929851A3F16B2190C8CA30C2 /* Pods_RX_GuguDanTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3204DD5CEB868FA89452E069 /* Pods-RX_GuguDan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RX_GuguDan.release.xcconfig"; path = "Target Support Files/Pods-RX_GuguDan/Pods-RX_GuguDan.release.xcconfig"; sourceTree = "<group>"; };
 		873BC18F222C48B6008E0FF6 /* RX_GuguDan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RX_GuguDan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		873BC192222C48B6008E0FF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		873BC194222C48B6008E0FF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,11 @@
 		873BC1A3222C48B7008E0FF6 /* RX_GuguDanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RX_GuguDanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		873BC1A7222C48B7008E0FF6 /* RX_GuguDanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RX_GuguDanTests.swift; sourceTree = "<group>"; };
 		873BC1A9222C48B7008E0FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		929851A3F16B2190C8CA30C2 /* Pods_RX_GuguDanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RX_GuguDanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF44C7921211FF94B94E12BE /* Pods-RX_GuguDan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RX_GuguDan.debug.xcconfig"; path = "Target Support Files/Pods-RX_GuguDan/Pods-RX_GuguDan.debug.xcconfig"; sourceTree = "<group>"; };
+		B6A2009FFFB795615B0F2A20 /* Pods-RX_GuguDanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RX_GuguDanTests.debug.xcconfig"; path = "Target Support Files/Pods-RX_GuguDanTests/Pods-RX_GuguDanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C54F9A05701F7357DEA181C9 /* Pods_RX_GuguDan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RX_GuguDan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD472C3643083EC588AC6569 /* Pods-RX_GuguDanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RX_GuguDanTests.release.xcconfig"; path = "Target Support Files/Pods-RX_GuguDanTests/Pods-RX_GuguDanTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93FA4D26F05982F63AB7FD1 /* Pods_RX_GuguDan.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D35B8D89C7EC97C89A6533B5 /* Pods_RX_GuguDanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				873BC191222C48B6008E0FF6 /* RX_GuguDan */,
 				873BC1A6222C48B7008E0FF6 /* RX_GuguDanTests */,
 				873BC190222C48B6008E0FF6 /* Products */,
+				B0B4B93ED4986195DE8376CF /* Pods */,
+				D50A817C6514B80C69F93C12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,27 @@
 			path = RX_GuguDanTests;
 			sourceTree = "<group>";
 		};
+		B0B4B93ED4986195DE8376CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF44C7921211FF94B94E12BE /* Pods-RX_GuguDan.debug.xcconfig */,
+				3204DD5CEB868FA89452E069 /* Pods-RX_GuguDan.release.xcconfig */,
+				B6A2009FFFB795615B0F2A20 /* Pods-RX_GuguDanTests.debug.xcconfig */,
+				FD472C3643083EC588AC6569 /* Pods-RX_GuguDanTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D50A817C6514B80C69F93C12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C54F9A05701F7357DEA181C9 /* Pods_RX_GuguDan.framework */,
+				929851A3F16B2190C8CA30C2 /* Pods_RX_GuguDanTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 873BC1AC222C48B7008E0FF6 /* Build configuration list for PBXNativeTarget "RX_GuguDan" */;
 			buildPhases = (
+				BA11570F4B4D0C011DBD9A71 /* [CP] Check Pods Manifest.lock */,
 				873BC18B222C48B6008E0FF6 /* Sources */,
 				873BC18C222C48B6008E0FF6 /* Frameworks */,
 				873BC18D222C48B6008E0FF6 /* Resources */,
+				095F358361390849D011C84E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +155,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 873BC1AF222C48B7008E0FF6 /* Build configuration list for PBXNativeTarget "RX_GuguDanTests" */;
 			buildPhases = (
+				803C30A66A946C964AB214CF /* [CP] Check Pods Manifest.lock */,
 				873BC19F222C48B7008E0FF6 /* Sources */,
 				873BC1A0222C48B7008E0FF6 /* Frameworks */,
 				873BC1A1222C48B7008E0FF6 /* Resources */,
@@ -191,6 +227,79 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		095F358361390849D011C84E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RX_GuguDan/Pods-RX_GuguDan-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RX_GuguDan/Pods-RX_GuguDan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		803C30A66A946C964AB214CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RX_GuguDanTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA11570F4B4D0C011DBD9A71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RX_GuguDan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		873BC18B222C48B6008E0FF6 /* Sources */ = {
@@ -358,6 +467,7 @@
 		};
 		873BC1AD222C48B7008E0FF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF44C7921211FF94B94E12BE /* Pods-RX_GuguDan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +485,7 @@
 		};
 		873BC1AE222C48B7008E0FF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3204DD5CEB868FA89452E069 /* Pods-RX_GuguDan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +503,7 @@
 		};
 		873BC1B0222C48B7008E0FF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6A2009FFFB795615B0F2A20 /* Pods-RX_GuguDanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +524,7 @@
 		};
 		873BC1B1222C48B7008E0FF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD472C3643083EC588AC6569 /* Pods-RX_GuguDanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
