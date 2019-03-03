@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,57 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RXAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="axK-wX-3rB">
+                                <rect key="frame" x="16" y="98" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5b-Oq-rti">
+                                <rect key="frame" x="172.5" y="541" width="30" height="30"/>
+                                <state key="normal" title="UP"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLt-Fo-A7Q">
+                                <rect key="frame" x="219" y="579" width="45" height="30"/>
+                                <state key="normal" title="RIGHT"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGh-aq-Bgg">
+                                <rect key="frame" x="121" y="579" width="35" height="30"/>
+                                <state key="normal" title="LEFT"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKs-Rs-1Zv">
+                                <rect key="frame" x="164" y="617" width="47" height="30"/>
+                                <state key="normal" title="DOWN"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mKs-Rs-1Zv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HWF-ou-5Jk"/>
+                            <constraint firstItem="nLt-Fo-A7Q" firstAttribute="centerY" secondItem="wGh-aq-Bgg" secondAttribute="centerY" id="aUY-OK-Wg2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="mKs-Rs-1Zv" secondAttribute="bottom" constant="20" id="cgN-dh-JmS"/>
+                            <constraint firstItem="mKs-Rs-1Zv" firstAttribute="top" secondItem="wGh-aq-Bgg" secondAttribute="bottom" constant="8" id="ev7-XE-TRv"/>
+                            <constraint firstItem="nLt-Fo-A7Q" firstAttribute="leading" secondItem="mKs-Rs-1Zv" secondAttribute="trailing" constant="8" id="o71-J1-nDV"/>
+                            <constraint firstItem="j5b-Oq-rti" firstAttribute="centerX" secondItem="mKs-Rs-1Zv" secondAttribute="centerX" id="pMV-Wh-zFx"/>
+                            <constraint firstItem="nLt-Fo-A7Q" firstAttribute="top" secondItem="j5b-Oq-rti" secondAttribute="bottom" constant="8" id="y3H-7q-Nd8"/>
+                            <constraint firstItem="mKs-Rs-1Zv" firstAttribute="leading" secondItem="wGh-aq-Bgg" secondAttribute="trailing" constant="8" id="y7v-FG-nYa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="boxView" destination="axK-wX-3rB" id="Lo1-T8-DJv"/>
+                        <outlet property="downButton" destination="mKs-Rs-1Zv" id="QVG-sh-uQt"/>
+                        <outlet property="leftButton" destination="wGh-aq-Bgg" id="E2Z-Sm-uee"/>
+                        <outlet property="rightButton" destination="nLt-Fo-A7Q" id="yDE-ze-xbF"/>
+                        <outlet property="upButton" destination="j5b-Oq-rti" id="xsk-9v-Tix"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

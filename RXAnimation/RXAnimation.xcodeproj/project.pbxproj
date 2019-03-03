@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06F15ABA9FC733F9E162D468 /* Pods_RXAnimationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB7B47CAA4A596DBC90672A /* Pods_RXAnimationTests.framework */; };
+		6F0A336F305F42F8DCC5CC6F /* Pods_RXAnimation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7BFCC9E3DF0365456FB98F /* Pods_RXAnimation.framework */; };
 		873BC1C0222C522A008E0FF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873BC1BF222C522A008E0FF6 /* AppDelegate.swift */; };
 		873BC1C2222C522A008E0FF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873BC1C1222C522A008E0FF6 /* ViewController.swift */; };
 		873BC1C5222C522A008E0FF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873BC1C3222C522A008E0FF6 /* Main.storyboard */; };
@@ -26,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4121C12AA8E9C016A7F19EF5 /* Pods-RXAnimationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXAnimationTests.release.xcconfig"; path = "Target Support Files/Pods-RXAnimationTests/Pods-RXAnimationTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A46CE5759D105DB9C71DDB8 /* Pods-RXAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXAnimation.debug.xcconfig"; path = "Target Support Files/Pods-RXAnimation/Pods-RXAnimation.debug.xcconfig"; sourceTree = "<group>"; };
+		6A7BFCC9E3DF0365456FB98F /* Pods_RXAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873BC1BC222C522A008E0FF6 /* RXAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		873BC1BF222C522A008E0FF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		873BC1C1222C522A008E0FF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		873BC1D0222C522B008E0FF6 /* RXAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RXAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		873BC1D4222C522B008E0FF6 /* RXAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXAnimationTests.swift; sourceTree = "<group>"; };
 		873BC1D6222C522B008E0FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EB7B47CAA4A596DBC90672A /* Pods_RXAnimationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXAnimationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFD9D24CA6FB345099C61BE8 /* Pods-RXAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXAnimation.release.xcconfig"; path = "Target Support Files/Pods-RXAnimation/Pods-RXAnimation.release.xcconfig"; sourceTree = "<group>"; };
+		F7C72840B5AB577A990BC43E /* Pods-RXAnimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXAnimationTests.debug.xcconfig"; path = "Target Support Files/Pods-RXAnimationTests/Pods-RXAnimationTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F0A336F305F42F8DCC5CC6F /* Pods_RXAnimation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06F15ABA9FC733F9E162D468 /* Pods_RXAnimationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				873BC1BE222C522A008E0FF6 /* RXAnimation */,
 				873BC1D3222C522B008E0FF6 /* RXAnimationTests */,
 				873BC1BD222C522A008E0FF6 /* Products */,
+				9652A343E6E6B9A2F9F893C1 /* Pods */,
+				AB0418A0F419B67E0CABCFE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,27 @@
 			path = RXAnimationTests;
 			sourceTree = "<group>";
 		};
+		9652A343E6E6B9A2F9F893C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A46CE5759D105DB9C71DDB8 /* Pods-RXAnimation.debug.xcconfig */,
+				EFD9D24CA6FB345099C61BE8 /* Pods-RXAnimation.release.xcconfig */,
+				F7C72840B5AB577A990BC43E /* Pods-RXAnimationTests.debug.xcconfig */,
+				4121C12AA8E9C016A7F19EF5 /* Pods-RXAnimationTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AB0418A0F419B67E0CABCFE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A7BFCC9E3DF0365456FB98F /* Pods_RXAnimation.framework */,
+				9EB7B47CAA4A596DBC90672A /* Pods_RXAnimationTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 873BC1D9222C522B008E0FF6 /* Build configuration list for PBXNativeTarget "RXAnimation" */;
 			buildPhases = (
+				E3D2B72BC75DD5783C3AFCC9 /* [CP] Check Pods Manifest.lock */,
 				873BC1B8222C522A008E0FF6 /* Sources */,
 				873BC1B9222C522A008E0FF6 /* Frameworks */,
 				873BC1BA222C522A008E0FF6 /* Resources */,
+				B9FF8FD075A92F7BE4CD05DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -120,6 +155,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 873BC1DC222C522B008E0FF6 /* Build configuration list for PBXNativeTarget "RXAnimationTests" */;
 			buildPhases = (
+				CF8FC54AF0488CA119A5A6C6 /* [CP] Check Pods Manifest.lock */,
 				873BC1CC222C522B008E0FF6 /* Sources */,
 				873BC1CD222C522B008E0FF6 /* Frameworks */,
 				873BC1CE222C522B008E0FF6 /* Resources */,
@@ -191,6 +227,79 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9FF8FD075A92F7BE4CD05DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RXAnimation/Pods-RXAnimation-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RXAnimation/Pods-RXAnimation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF8FC54AF0488CA119A5A6C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RXAnimationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3D2B72BC75DD5783C3AFCC9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RXAnimation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		873BC1B8222C522A008E0FF6 /* Sources */ = {
@@ -358,6 +467,7 @@
 		};
 		873BC1DA222C522B008E0FF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A46CE5759D105DB9C71DDB8 /* Pods-RXAnimation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -375,6 +485,7 @@
 		};
 		873BC1DB222C522B008E0FF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFD9D24CA6FB345099C61BE8 /* Pods-RXAnimation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -392,6 +503,7 @@
 		};
 		873BC1DD222C522B008E0FF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7C72840B5AB577A990BC43E /* Pods-RXAnimationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -412,6 +524,7 @@
 		};
 		873BC1DE222C522B008E0FF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4121C12AA8E9C016A7F19EF5 /* Pods-RXAnimationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
