@@ -18,22 +18,6 @@ enum Animation {
 	case up
 }
 
-extension Animation {
-	func transform( _ transform: CGAffineTransform) -> CGAffineTransform {
-		switch self {
-		case .left:
-			return transform.translatedBy(x: -50, y: 0)
-		case .right:
-			return transform.translatedBy(x: 50, y: 0)
-		case .down:
-			return transform.translatedBy(x: 0, y: 50)
-		case .up:
-			return transform.translatedBy(x: 0, y: -50)
-		}
-	}
-}
-
-
 final class ViewController: UIViewController {
 	@IBOutlet weak var boxView: UIView!
 	@IBOutlet weak var upButton: UIButton!
@@ -46,8 +30,44 @@ final class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
+		
+		bind()
 	}
+}
 
-
+extension ViewController {
+	func bind() {
+		self.leftButton.rx.tap.map {
+			Animation.left
+			}.subscribe(onNext: { [weak self] _ in
+				guard let `self` = self else { return }
+				UIView.animate(withDuration: 1.0, animations: {
+					self.boxView.transform = self.boxView.transform.translatedBy(x: -50, y: 0)
+				})
+			}).disposed(by: disposeBag)
+		
+		
+		
+		self.rightButton.rx.tap.asObservable().subscribe(onNext: { [weak self] _ in
+			guard let `self` = self else { return }
+			UIView.animate(withDuration: 1.0, animations: {
+				self.boxView.transform = self.boxView.transform.translatedBy(x: 50, y: 0)
+			})
+		}).disposed(by: disposeBag)
+		
+		self.downButton.rx.tap.asObservable().subscribe(onNext: { [weak self] _ in
+			UIView.animate(withDuration: 1.0, animations: {
+				guard let `self` = self else { return }
+				self.boxView.transform = self.boxView.transform.translatedBy(x: 0, y: 50)
+			})
+		}).disposed(by: disposeBag)
+		
+		self.upButton.rx.tap.asObservable().subscribe(onNext: { [weak self] _ in
+			guard let `self` = self else { return }
+			UIView.animate(withDuration: 1.0, animations: {
+				self.boxView.transform = self.boxView.transform.translatedBy(x: 0, y: -50)
+			})
+		}).disposed(by: disposeBag)
+	}
 }
 
