@@ -18,6 +18,31 @@ enum Animation {
 	case up
 }
 
+extension Animation {
+	func transform( _ transform: CGAffineTransform) -> CGAffineTransform {
+		switch self {
+		case .left:
+			return transform.translatedBy(x: -50, y: 0)
+		case .right:
+			return transform.translatedBy(x: 50, y: 0)
+		case .down:
+			return transform.translatedBy(x: 0, y: 50)
+		case .up:
+			return transform.translatedBy(x: 0, y: -50)
+		}
+	}
+}
+
+extension Reactive where Base: UIView {
+	var animation: Binder<Animation> {
+		return Binder(self.base) { view, animation in
+			UIView.animate(withDuration: 1, animations: {
+				view.transform = animation.transform(view.transform)
+			}, completion: { (result) in })
+		}
+	}
+}
+
 final class ViewController: UIViewController {
 	@IBOutlet weak var boxView: UIView!
 	@IBOutlet weak var upButton: UIButton!
@@ -37,37 +62,14 @@ final class ViewController: UIViewController {
 
 extension ViewController {
 	func bind() {
-		self.leftButton.rx.tap.map {
-			Animation.left
-			}.subscribe(onNext: { [weak self] _ in
-				guard let `self` = self else { return }
-				UIView.animate(withDuration: 1.0, animations: {
-					self.boxView.transform = self.boxView.transform.translatedBy(x: -50, y: 0)
-				})
-			}).disposed(by: disposeBag)
-		
-		
-		
-		self.rightButton.rx.tap.asObservable().subscribe(onNext: { [weak self] _ in
-			guard let `self` = self else { return }
-			UIView.animate(withDuration: 1.0, animations: {
-				self.boxView.transform = self.boxView.transform.translatedBy(x: 50, y: 0)
-			})
-		}).disposed(by: disposeBag)
-		
-		self.downButton.rx.tap.asObservable().subscribe(onNext: { [weak self] _ in
-			UIView.animate(withDuration: 1.0, animations: {
-				guard let `self` = self else { return }
-				self.boxView.transform = self.boxView.transform.translatedBy(x: 0, y: 50)
-			})
-		}).disposed(by: disposeBag)
-		
-		self.upButton.rx.tap.asObservable().subscribe(onNext: { [weak self] _ in
-			guard let `self` = self else { return }
-			UIView.animate(withDuration: 1.0, animations: {
-				self.boxView.transform = self.boxView.transform.translatedBy(x: 0, y: -50)
-			})
-		}).disposed(by: disposeBag)
+		leftButton.rx.tap.map{ Animation.left }
+			.bind(to: boxView.rx.animation).disposed(by: disposeBag)
+		rightButton.rx.tap.map{ Animation.right }
+			.bind(to: boxView.rx.animation).disposed(by: disposeBag)
+		upButton.rx.tap.map{ Animation.up }
+			.bind(to: boxView.rx.animation).disposed(by: disposeBag)
+		downButton.rx.tap.map{ Animation.down }
+			.bind(to: boxView.rx.animation).disposed(by: disposeBag)
 	}
 }
 
