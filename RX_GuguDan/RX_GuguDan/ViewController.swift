@@ -26,26 +26,17 @@ final class ViewController: UIViewController {
 
 extension ViewController {
 	func bind() {
-		inputTextField.rx.text
-			.orEmpty
-			.asObservable()
-			.flatMap { text -> Observable<Int> in
-				guard let intValue = Int(text) else { return Observable.empty() }
-				return Observable.just(intValue)
-			}.flatMap { dan -> Observable<String> in
-				return Observable<Int>.range(start: 1, count: 9)
-					.map{ step -> String in
-						return "\(dan) * \(step) = \(dan * step)"
-					}.toArray()
-					.map { steps -> String in
-						return steps.reduce("") { (answer, next) -> String in
-							return answer + "\n" + next
-						}
-				}
-			}.debug().subscribe(onNext: { result in
-				print(result)
-				self.outputLabel.text = result
-			}).disposed(by: disposeBag)
+		let inputNumber = inputTextField.rx.text.orEmpty.map {
+			Int($0) ?? 0
+		}
+		
+		let result = inputNumber.map { (dan) -> String in
+			return (1...9).map({ (step) -> String in
+				return "\(dan) * \(step) = \(dan * step)\n"
+			}).reduce("", +)
+		}
+		
+		result.bind(to: self.outputLabel.rx.text).disposed(by: disposeBag)
 	}
 }
 
