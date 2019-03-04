@@ -2,7 +2,16 @@
 
 At a Grance
 ----
-
+   ```
+  leftButton.rx.tap.map{ Animation.left }
+			.bind(to: boxView.rx.animation).disposed(by: disposeBag)
+		rightButton.rx.tap.map{ Animation.right }
+			.bind(to: boxView.rx.animation).disposed(by: disposeBag)
+		upButton.rx.tap.map{ Animation.up }
+			.bind(to: boxView.rx.animation).disposed(by: disposeBag)
+		downButton.rx.tap.map{ Animation.down }
+			.bind(to: boxView.rx.animation).disposed(by: disposeBag)
+   ```
 
 Getting Stated
 ----
