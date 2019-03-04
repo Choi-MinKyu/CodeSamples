@@ -5,13 +5,18 @@ button의 tab 이벤트를 stream으로 연결하여 Animation이 동작하도�
 
 * bind(to:)는 두 스트림을 연결시켜주는 역활
 
- 예로 textField.rx.text.bind(to:label.rx.text) 는
+ 예로 
+ ```
+ textField.rx.text.bind(to:label.rx.text)
+ ```
  
+ 위 코드는 아래의 코드와 같은 역활을 한다.
+ 
+ ```
  textField.rx.text.subscribe(.onNext {
      self.textLabel.text = $0
  })
- 
- 와 같은 역활은 한다.
+ ```
  
  위 코드는 각 스트림이 비동기로 동작을 한다.
  
