@@ -1,19 +1,19 @@
 # Animation
 
-At a Grance
+요약
 ----
    ```
   leftButton.rx.tap.map{ Animation.left }
 			.bind(to: boxView.rx.animation).disposed(by: disposeBag)
-		rightButton.rx.tap.map{ Animation.right }
+  rightButton.rx.tap.map{ Animation.right }
 			.bind(to: boxView.rx.animation).disposed(by: disposeBag)
-		upButton.rx.tap.map{ Animation.up }
+  upButton.rx.tap.map{ Animation.up }
 			.bind(to: boxView.rx.animation).disposed(by: disposeBag)
-		downButton.rx.tap.map{ Animation.down }
+  downButton.rx.tap.map{ Animation.down }
 			.bind(to: boxView.rx.animation).disposed(by: disposeBag)
    ```
 
-Getting Stated
+시작하기
 ----
 * View의 Animation을 동작하는 코드
 
@@ -43,7 +43,7 @@ button의 tab 이벤트를 stream으로 연결하여 Animation이 동작하도�
  기존 방식으로 처리 하려면 textField의 delegate 해당 textfield인지를 체크 하고,
  이후 textfield에서 입력값을 읽어 와서 label에 text를 표시.
 
-Requiments
+참조항목
 ----
 ```
 pod 'RxSwift'
