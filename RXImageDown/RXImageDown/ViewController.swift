@@ -35,8 +35,7 @@ extension ViewController {
 			.filter { (url: URL) -> Bool in
 				let imageExtension = ["jpg", "jpeg", "gif", "png"]
 				return imageExtension.contains(url.pathExtension)
-			}.debug()
-			.flatMap { (url: URL) -> Observable<String> in
+			}.flatMap { (url: URL) -> Observable<String> in
 				return Observable<String>.create({ anyObserver -> Disposable in
 					let destination: DownloadRequest.DownloadFileDestination = { _, _ in
 						let directoryURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
