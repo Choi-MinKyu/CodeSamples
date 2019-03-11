@@ -6,7 +6,7 @@ RxSwift 관련하여, 코드들을 만들어서 업로드
 
 RxSwift의 사용 방법및 전반적인 사용처에 대해서 학습 가능
 
-* 신규 프로젝트 Search and login (RX sample)
+* [신규] Search and login (RX sample)
     * 로그인 구현
     * searchbar에서 검색한 챔피언들을 observable로 tableview가 갱신 구현
     * mvvm 구현
